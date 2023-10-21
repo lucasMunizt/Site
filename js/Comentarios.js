@@ -34,7 +34,7 @@ class Comentarios extends HTMLElement{
         const card = document.createElement("style");
         card.textContent =`
         .container{
-            font-size: 1.07em;
+            font-size: 1.05em;
             text-align: center;
         }
 
