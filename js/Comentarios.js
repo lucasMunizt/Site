@@ -33,23 +33,12 @@ class Comentarios extends HTMLElement{
     styles(){
         const card = document.createElement("style");
         card.textContent =`
+      
         .container{
-            font-size: 1.05em;
-            text-align: center;
+            font-size: 1.02em;
+          
         }
 
-         .container strong{
-            margin-top:-10px
-            text-align: center;
-         }
-      
-        .container p {
-            display: flex;
-            text-align: center;
-            margin-top: 20px;
-            flex-direction: column;
-        }
-        
         .comentarios span{
             color: red;
         }
@@ -61,3 +50,8 @@ class Comentarios extends HTMLElement{
 
 }
 customElements.define('anotacao-2',Comentarios);
+
+
+
+
+   
