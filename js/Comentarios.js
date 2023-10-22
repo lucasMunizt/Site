@@ -35,7 +35,7 @@ class Comentarios extends HTMLElement{
         card.textContent =`
       
         .container{
-            font-size: 1.02em;
+            font-size: 1.00em;
           
         }
 
