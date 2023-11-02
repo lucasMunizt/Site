@@ -68,6 +68,7 @@ nav ul li a {
     cursor: pointer;
     display: none;
     font-family: 'Roboto', sem serifa;
+    
 }
 
 #check {
@@ -118,9 +119,9 @@ section {
 }
 
 .quadrado {
-    margin-top: 70px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     -webkit-box-shadow: 9px 9px 27px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 9px 9px 27px 0px rgba(0,0,0,0.75);
     box-shadow: 9px 9px 27px 0px rgba(0,0,0,0.75);
@@ -135,7 +136,9 @@ section {
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+    position: relative;
+    padding: 4rem;
+    border-radius: 20px;
 }
 
 .descrisao-loja p{ 
@@ -194,22 +197,22 @@ section {
     max-width: 1200px;
     height: 400px;
     display: flex;
+  
 }
 
 .container-img li{
     position: relative;
-    animation: slide 15s infinite ease-out;
+    animation: slide 20s infinite ease-out;
 }
 
 @keyframes slide{
     0%{left: 0px;}
-    20%{left: 0px;}
+    
 
     30%{left: -400px;}
-    50%{left: -400px;}
 
     60%{left: -800px;}
-    80%{left: -800px;}
+    80%{left: -1210px;}
 
     100%{left: 0px;}
 }
@@ -285,7 +288,7 @@ footer{
         box-shadow: 0 0 5px grey;
         max-width: 80%;
         height: 100%;
-        background-color: #98cfc3; /* rgb(235, 233, 233)*/
+        background-color: #98cfc3;
         top: 80px;
         left: -100%;
         text-align: center;
@@ -322,6 +325,8 @@ footer{
     .descrisao-loja {
         align-items: center;
         display: flex;
+        
+        position: relative;
         padding: 1.3rem;
         border-radius: 20px;
 
@@ -331,9 +336,67 @@ footer{
         left: 0;
     }
 
-     /* MARCAS */
 
-     .container-img img{
+
+    .iform-rodape {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    .forma-pagamento ul {
+        align-items: center;        
+    }
+
+    .forma-pagamento li{
+       margin-top: 10px; 
+    }
+
+}
+
+@media(max-width:576px){
+    .container-img img{
+        margin-top: 20px;
+        box-shadow: 1px 1px 1px 1px rgb(245, 233, 233);
+        height: 250px;
+        width: 300px;
+        object-fit: scale-down;
+        padding: 50px; 
+        align-items: center;
+    }
+    
+   .container-img ul{
+        overflow: hidden;
+        width:  350px;
+        height: 250px;
+        display: flex;
+    }
+    
+    .container-img li{
+       position: relative;
+        animation: slide 15s infinite ease-out;
+    }
+    
+    @keyframes slide{
+        0%{left: 0px;}
+       
+        
+        20%{left: -300px;}
+
+        40%{left: -500px;}
+        
+        60%{left: -800px;}
+
+        99%{left: -1100px;}
+        
+        100%{left: 0px;}
+    }
+
+}
+
+
+@media(max-width:450px){
+      .container-img img{
         margin-top: 20px;
         box-shadow: 1px 1px 1px 1px rgb(245, 233, 233);
         height: 250px;
@@ -373,18 +436,5 @@ footer{
         100%{left: 0px;}
     }
 
-    .iform-rodape {
-        display: flex;
-        flex-direction: column;
-       
-    }
-    
-    .forma-pagamento ul {
-        align-items: center;        
-    }
-
-    .forma-pagamento li{
-       margin-top: 10px; 
-    }
-
 }
+

@@ -22,7 +22,6 @@
     text-align: center;
     transform: translatex(-50%);
     z-index: 1000;
-    
     list-style: none;
     text-align: center;
   }
@@ -36,18 +35,6 @@
     height: 0;
   }
    
-
-
-  .direction label{
-    display: inline-block;
-    border: none;
-    cursor: pointer;
-    background-color: #f7d1d177;
-    padding: 0.4rem;
-    border: solid transparent;
-    transition: 0.2s;
-  }
-
   .slider-controls label {
     display: inline-block;
     border: none;
